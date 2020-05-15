@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Espresso</string>
+    <string name="mainActivityTitle">MainActivity</string>
+    <string name="secondActivityTitle">SecondActivity</string>
+    <string name="go_back">Go back</string>
+    <string name="next_activity">Next Activity</string>
+</resources>
