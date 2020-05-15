@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".fragmenttest.FragmentTestActivity" />
         <activity android:name=".basictest.SecondActivity" />
         <activity android:name=".basictest.MainActivity">
             <intent-filter>

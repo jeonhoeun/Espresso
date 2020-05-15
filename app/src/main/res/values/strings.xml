@@ -8,4 +8,5 @@
     <string name="argumentValue">argumentValue</string>
     <string name="argumentFragmentTitle">ArgumentFragmentTitle</string>
     <string name="listargfragment">ListArgFragment</string>
+    <string name="goto_argumentfragmenttest">goto ArgumentFragmentTest</string>
 </resources>
