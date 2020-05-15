@@ -1,7 +1,8 @@
-package com.hejeon.espresso
+package com.hejeon.espresso.basictest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hejeon.espresso.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {

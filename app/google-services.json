@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "842262380281",
+    "firebase_url": "https://espresso-stepbystep.firebaseio.com",
+    "project_id": "espresso-stepbystep",
+    "storage_bucket": "espresso-stepbystep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842262380281:android:ea7cf83d6bbcf77d33ac28",
+        "android_client_info": {
+          "package_name": "com.hejeon.espresso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842262380281-7diku0m1n9qkqg9o1oacsgtgkkhfqoql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJfgXsyQ5f4K55YGga7q7jJx5eTDXvZ-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842262380281-7diku0m1n9qkqg9o1oacsgtgkkhfqoql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
