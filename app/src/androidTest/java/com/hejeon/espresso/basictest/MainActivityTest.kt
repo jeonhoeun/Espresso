@@ -1,4 +1,4 @@
-package com.hejeon.espresso
+package com.hejeon.espresso.basictest
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
@@ -6,7 +6,7 @@ import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
-import com.hejeon.espresso.basictest.MainActivity
+import com.hejeon.espresso.R
 import org.junit.Test
 
 class MainActivityTest{

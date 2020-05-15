@@ -7,4 +7,5 @@
     <string name="myfragmentTitle">MyFragment</string>
     <string name="argumentValue">argumentValue</string>
     <string name="argumentFragmentTitle">ArgumentFragmentTitle</string>
+    <string name="listargfragment">ListArgFragment</string>
 </resources>
