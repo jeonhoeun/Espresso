@@ -2,6 +2,8 @@ package com.hejeon.espresso
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.Espresso.pressBack
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import org.junit.Test
@@ -23,5 +25,21 @@ class MainActivityTest{
         ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.mainActivityTitle))
             .check(matches(withText(R.string.mainActivityTitle)))
+    }
+
+    @Test //TEST__04 버튼을 누르는 행위와 화면이동 테스트
+    fun onNextActivityButton_click_navSecondActivity() {
+        ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.next_activity)).perform(click())
+        onView(withId(R.id.secondaryActivity)).check(matches(isDisplayed()))
+    }
+
+    @Test //TEST__05 pressBack
+    fun test_backPress_toMainActivity() {
+        ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.next_activity)).perform(click())
+        onView(withId(R.id.secondaryActivity)).check(matches(isDisplayed()))
+        pressBack() // or onView(withId(R.id.go_back)).perform(click())
+        onView(withId(R.id.MainActivity)).check(matches(isDisplayed()))
     }
 }
