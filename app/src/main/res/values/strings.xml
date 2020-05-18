@@ -9,4 +9,6 @@
     <string name="argumentFragmentTitle">ArgumentFragmentTitle</string>
     <string name="listargfragment">ListArgFragment</string>
     <string name="goto_argumentfragmenttest">goto ArgumentFragmentTest</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="picked_image">Picked Image</string>
 </resources>
