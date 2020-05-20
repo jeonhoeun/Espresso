@@ -8,7 +8,9 @@ import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import com.hejeon.espresso.R
+import com.hejeon.espresso.dialoginput.DialogInputActivity.Companion.buildToastMessage
 import org.junit.Test
+import kotlin.math.exp
 
 //TEST_14 : 다이얼로그 인풋 테스트
 class DialogInputActivityTest{
@@ -32,5 +34,11 @@ class DialogInputActivityTest{
         onView(withText(R.string.enter_text)).check(doesNotExist()) //이렇게 해야됨
 
         onView(withId(R.id.inputText)).check(matches(withText(expected)))
+
+        //TEST_15 : TOAST TEST
+        //test if toast is displayed
+        onView(withText(buildToastMessage(expected)))
+            .inRoot(ToastMatcher())
+            .check(matches(isDisplayed()))
     }
 }
