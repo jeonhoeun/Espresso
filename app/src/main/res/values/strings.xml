@@ -11,4 +11,6 @@
     <string name="goto_argumentfragmenttest">goto ArgumentFragmentTest</string>
     <string name="pick_image">Pick Image</string>
     <string name="picked_image">Picked Image</string>
+    <string name="take_picture">take picture</string>
+    <string name="taken_image">taken image</string>
 </resources>
