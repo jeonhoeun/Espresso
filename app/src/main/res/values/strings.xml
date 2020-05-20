@@ -13,4 +13,7 @@
     <string name="picked_image">Picked Image</string>
     <string name="take_picture">take picture</string>
     <string name="taken_image">taken image</string>
+    <string name="please_input">Please Input</string>
+    <string name="open_dialog">Open Dialog</string>
+    <string name="enter_text">Enter Text</string>
 </resources>

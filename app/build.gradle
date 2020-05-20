@@ -64,4 +64,6 @@ dependencies {
 
     implementation "com.github.bumptech.glide:glide:4.9.0" // for glide
     annotationProcessor "com.github.bumptech.glide:compiler:4.9.0" // for glide
+
+    implementation 'com.afollestad.material-dialogs:files:3.3.0' // for dialog
 }
