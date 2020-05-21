@@ -61,6 +61,7 @@ dependencies {
     //androidTestImplementation 'androidx.test:runner:1.1.0' // for espresso-intent (위의 androidx.test 안에 동일내용있으므로 생략)
     androidTestImplementation 'androidx.test:rules:1.2.0' // for espresso-intent
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0' // for espresso-intent
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0' // for espresso-intent ( recycler view actionOnItemAtPosition )
 
     implementation "com.github.bumptech.glide:glide:4.9.0" // for glide
     annotationProcessor "com.github.bumptech.glide:compiler:4.9.0" // for glide
