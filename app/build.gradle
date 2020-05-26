@@ -31,6 +31,12 @@ android {
     kotlinOptions { // launchFragmentInContainer 에서 요구함
         jvmTarget = "1.8"
     }
+
+    testOptions{
+        unitTests{
+            includeAndroidResources = true // robolectric 을 위해서 설정함
+        }
+    }
 }
 
 dependencies {
@@ -71,6 +77,6 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:files:3.3.0' // for dialog
 
     androidTestImplementation "io.mockk:mockk-android:1.9.3" // for mockk
-
+    testImplementation 'org.robolectric:robolectric:4.3.1' // for robolectric
 
 }
