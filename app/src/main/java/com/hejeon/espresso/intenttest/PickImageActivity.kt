@@ -3,7 +3,6 @@ package com.hejeon.espresso.intenttest
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
-import androidx.activity.invoke
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -53,6 +52,6 @@ class PickImageActivity : AppCompatActivity() {
         }
 
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        req(intent)
+        req.launch(intent)
     }
 }

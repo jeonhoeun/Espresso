@@ -45,23 +45,25 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //androidx.test
-    def androidx_test = "1.1.0"
+    def androidx_test = "1.2.0"
     androidTestImplementation "androidx.test:runner:$androidx_test"
     androidTestImplementation "androidx.test:core:$androidx_test"
-    androidTestImplementation "androidx.test.ext:junit-ktx:$androidx_test"
+    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.1"
 
-    implementation 'com.google.firebase:firebase-analytics:17.4.1' //for firebase
+    implementation 'com.google.firebase:firebase-analytics:17.4.2' //for firebase
 
     // androidx.fragment
-    def fragment_version = "1.3.0-alpha04" // must use for new factory stuff
+    def fragment_version = "1.3.0-alpha05" // must use for new factory stuff
     debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
     // fragment test(launchFragmentInContainer) 에 필요함
 
-    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.2.0' // for espresso-intent
+    def espresso_version = "3.2.0"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso_version" // for espresso-intent
     //androidTestImplementation 'androidx.test:runner:1.1.0' // for espresso-intent (위의 androidx.test 안에 동일내용있으므로 생략)
-    androidTestImplementation 'androidx.test:rules:1.2.0' // for espresso-intent
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0' // for espresso-intent
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0' // for espresso-intent ( recycler view actionOnItemAtPosition )
+    androidTestImplementation "androidx.test:rules:1.2.0" // for espresso-intent
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version" // for espresso-intent
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version" // for espresso-intent ( recycler view actionOnItemAtPosition )
+    implementation "androidx.test.espresso:espresso-idling-resource:$espresso_version" // for idling resource test ( test having delay)
 
     implementation "com.github.bumptech.glide:glide:4.9.0" // for glide
     annotationProcessor "com.github.bumptech.glide:compiler:4.9.0" // for glide
