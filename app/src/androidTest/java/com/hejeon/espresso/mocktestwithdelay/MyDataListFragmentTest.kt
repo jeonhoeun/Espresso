@@ -10,12 +10,11 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.hejeon.espresso.R
 import com.hejeon.espresso.util.EspressoIdlingResource
-import org.junit.After
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
+import org.junit.*
+import org.junit.runners.MethodSorters
 
 //TEST_17 : RECYCLER VIEW TEST WITH DELAY
+@FixMethodOrder(MethodSorters.NAME_ASCENDING) // 테스트 메소드 순서를 정하는 옵션임 가끔 테스트순서에따라 버그가 있는데, 이때는 메모리를 적게 쓰는 테스트 순으로 하면 해결된다.
 class MyDataListFragmentTest{
     @get: Rule
     val activityScenario = ActivityScenarioRule(MockTestMainActivity::class.java)
